@@ -67,38 +67,50 @@ SpriteAtlas:
     - 97737a41ab70f2747907005889892327: 21300000
     - f0ed227137d68014ebb1fef5de93f0e0: 21300000
     - 4f7bbc4245d108640beb53e57a50f433: 21300000
+    - f8d33b53524194f4e9e5ade8174d789c: 21300000
     - 9219fce6d02fb454e97c9ec22564aae8: 21300000
+    - d81bf667a9060bb44a1e532322e0baa5: 21300000
     - 2f621c88dbeca994cace27a8e5f46a55: 21300000
     - f737cd494e124614490108e5f284a773: 21300000
     - 0b7eacaa86f50f44ab1f6785d64f6a8a: 21300000
     - cbb7c52b12af812408186f8a160b57c2: 21300000
     - 39685f4d35c233b4498088b6f7c50a9f: 21300000
     - da4d945e223fa4d4a9336996cc693a7f: 21300000
+    - 26da5a5efe16c494ebd63465fb8d48e3: 21300000
+    - e6b919df2faf7f54e855d91f2fe0b616: 21300000
   m_MasterAtlas: {fileID: 0}
   m_PackedSprites:
   - {fileID: 21300000, guid: d3ac36a0b472e1845b3f60a6d8e7c1b8, type: 3}
   - {fileID: 21300000, guid: 97737a41ab70f2747907005889892327, type: 3}
   - {fileID: 21300000, guid: f0ed227137d68014ebb1fef5de93f0e0, type: 3}
   - {fileID: 21300000, guid: 4f7bbc4245d108640beb53e57a50f433, type: 3}
+  - {fileID: 21300000, guid: f8d33b53524194f4e9e5ade8174d789c, type: 3}
   - {fileID: 21300000, guid: 9219fce6d02fb454e97c9ec22564aae8, type: 3}
+  - {fileID: 21300000, guid: d81bf667a9060bb44a1e532322e0baa5, type: 3}
   - {fileID: 21300000, guid: 2f621c88dbeca994cace27a8e5f46a55, type: 3}
   - {fileID: 21300000, guid: f737cd494e124614490108e5f284a773, type: 3}
   - {fileID: 21300000, guid: 0b7eacaa86f50f44ab1f6785d64f6a8a, type: 3}
   - {fileID: 21300000, guid: cbb7c52b12af812408186f8a160b57c2, type: 3}
   - {fileID: 21300000, guid: 39685f4d35c233b4498088b6f7c50a9f, type: 3}
   - {fileID: 21300000, guid: da4d945e223fa4d4a9336996cc693a7f, type: 3}
+  - {fileID: 21300000, guid: 26da5a5efe16c494ebd63465fb8d48e3, type: 3}
+  - {fileID: 21300000, guid: e6b919df2faf7f54e855d91f2fe0b616, type: 3}
   m_PackedSpriteNamesToIndex:
   - photo_2024-09-21_17-08-16
   - home-04 (1)
   - trend-up-01
   - user-01
+  - Frame 13 (1) 1
   - Icon (1)
+  - chevron-right
   - Frame 13
   - star (1)
   - lucide-lab_floor-plan
   - Rectangle 13
   - arrow-right
   - material-symbols_floor-rounded
+  - Frame 13 (1)
+  - Frame 14
   m_RenderDataMap: {}
   m_Tag: Main Screen Sprite Atlas
   m_IsVariant: 0

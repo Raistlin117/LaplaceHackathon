@@ -5,6 +5,7 @@ using Common.Data;
 using Configs;
 using deVoid.Utils;
 using Newtonsoft.Json;
+using UI.Screens.MainScreen;
 using UnityEngine;
 
 namespace AppSaveAndLoad
@@ -45,6 +46,15 @@ namespace AppSaveAndLoad
             SaveJsonToFile(json, Constants.UserDataFileName);
 
             Signals.Get<UserDataUpdatedSignal>().Dispatch();
+        }
+
+        public HouseData LoadHouseData()
+        {
+            string json = ReadJsonFromFile(Constants.AppDataFileName);
+
+            HouseData appData = JsonConvert.DeserializeObject<HouseData>(json);
+
+            return appData;
         }
 
         public UsersDataStruct LoadUserData()
@@ -112,10 +122,5 @@ namespace AppSaveAndLoad
             Debug.LogError("Файл не найден: " + path);
             return null;
         }
-
-        // public object LoadHouseData()
-        // {
-        //
-        // }
     }
 }

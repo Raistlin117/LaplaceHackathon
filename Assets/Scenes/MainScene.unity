@@ -122,6 +122,11 @@ NavMeshSettings:
     debug:
       m_Flags: 0
   m_NavMeshData: {fileID: 0}
+--- !u!1 &269131388 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 9101216526188712273, guid: f4721ece2eefb104a8ea2b425e9b66b9, type: 3}
+  m_PrefabInstance: {fileID: 1847831075}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &981837825
 GameObject:
   m_ObjectHideFlags: 0
@@ -214,6 +219,11 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1284922300 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 1200957802940718092, guid: f4721ece2eefb104a8ea2b425e9b66b9, type: 3}
+  m_PrefabInstance: {fileID: 1847831075}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1428603894
 GameObject:
   m_ObjectHideFlags: 0
@@ -282,6 +292,11 @@ Transform:
   m_Children: []
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1721112289 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 668513106623400673, guid: f4721ece2eefb104a8ea2b425e9b66b9, type: 3}
+  m_PrefabInstance: {fileID: 1847831075}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1001 &1847831075
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -498,22 +513,6 @@ PrefabInstance:
       propertyPath: m_AnchoredPosition.y
       value: 0
       objectReference: {fileID: 0}
-    - target: {fileID: 7658438405247143170, guid: f4721ece2eefb104a8ea2b425e9b66b9, type: 3}
-      propertyPath: m_AnchorMax.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7658438405247143170, guid: f4721ece2eefb104a8ea2b425e9b66b9, type: 3}
-      propertyPath: m_AnchorMin.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7658438405247143170, guid: f4721ece2eefb104a8ea2b425e9b66b9, type: 3}
-      propertyPath: m_AnchoredPosition.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 7658438405247143170, guid: f4721ece2eefb104a8ea2b425e9b66b9, type: 3}
-      propertyPath: m_AnchoredPosition.y
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 8348641698267494906, guid: f4721ece2eefb104a8ea2b425e9b66b9, type: 3}
       propertyPath: m_AnchorMax.y
       value: 0
@@ -592,7 +591,9 @@ MonoBehaviour:
     TypeName: 
   autoRun: 1
   autoInjectGameObjects:
-  - {fileID: 0}
+  - {fileID: 1721112289}
+  - {fileID: 269131388}
+  - {fileID: 1284922300}
   _userDataConfigs: {fileID: 11400000, guid: 4655efe1d980e144cbf5aabd551d1540, type: 2}
 --- !u!4 &1976538965
 Transform:

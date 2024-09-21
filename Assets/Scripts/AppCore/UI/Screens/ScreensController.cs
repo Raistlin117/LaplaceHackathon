@@ -11,7 +11,7 @@ namespace AppCore.UI.Screens
     public class ScreensController : MonoBehaviour
     {
         [SerializeField] private MainScreenView _mainScreenView;
-        [SerializeField] private ProfileScreen _profileScreen;
+        [SerializeField] private ProfileScreenView _profileScreenView;
         [SerializeField] private LotScreenView _lotScreen;
 
         private void Awake()
@@ -30,17 +30,17 @@ namespace AppCore.UI.Screens
             {
                 case ScreenType.Main:
                     _mainScreenView.gameObject.SetActive(true);
-                    _profileScreen.gameObject.SetActive(false);
+                    _profileScreenView.gameObject.SetActive(false);
                     _lotScreen.gameObject.SetActive(false);
                     break;
                 case ScreenType.Profile:
                     _mainScreenView.gameObject.SetActive(false);
-                    _profileScreen.gameObject.SetActive(true);
+                    _profileScreenView.gameObject.SetActive(true);
                     _lotScreen.gameObject.SetActive(false);
                     break;
                 case ScreenType.Lot:
                     _mainScreenView.gameObject.SetActive(false);
-                    _profileScreen.gameObject.SetActive(false);
+                    _profileScreenView.gameObject.SetActive(false);
                     _lotScreen.gameObject.SetActive(true);
                     _lotScreen.SetId(id);
                     break;

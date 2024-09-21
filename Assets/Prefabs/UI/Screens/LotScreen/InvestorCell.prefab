@@ -145,6 +145,7 @@ GameObject:
   - component: {fileID: 2817408614627196712}
   - component: {fileID: 6712123695339364145}
   - component: {fileID: 2648987966631203662}
+  - component: {fileID: 4679654387337393675}
   m_Layer: 5
   m_Name: InvestorCell
   m_TagString: Untagged
@@ -212,6 +213,19 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &4679654387337393675
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2781947311698680120}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c371482ca5524b2c8e366e155dfc74be, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _moneyCount: {fileID: 1474686610276111985}
 --- !u!1 &3211498930174276907
 GameObject:
   m_ObjectHideFlags: 0

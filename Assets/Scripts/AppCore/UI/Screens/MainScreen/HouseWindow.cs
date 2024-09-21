@@ -18,12 +18,12 @@ namespace AppCore.UI.Screens.MainScreen
 
         private int _id;
 
-        public void Setup(HouseWindowData houseWindowData)
+        public void Setup(HouseData houseWindowData)
         {
             _id = houseWindowData.Id;
             _houseImage.sprite = houseWindowData.HouseImage;
             _developerText.text = houseWindowData.DeveloperText;
-            _roomInfo.text = $"{houseWindowData.RoomInfo} rooms";
+            _roomInfo.text = $"{houseWindowData.RoomsCount} rooms";
             _floorInfo.text = $"{houseWindowData.Floor} floor of {houseWindowData.HouseFloorness}";
             _investedLeftAmountText.text = houseWindowData.InvestedLeftAmount.ToString();
             _slider.value = (float) houseWindowData.InvestedLeftAmount / houseWindowData.HouseOverallPrice;

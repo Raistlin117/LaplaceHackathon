@@ -6,7 +6,7 @@ using VContainer;
 
 namespace UI.Screens.ProfileScreen
 {
-    public class ProfileScreen : MonoBehaviour
+    public class ProfileScreenView : MonoBehaviour
     {
         [SerializeField] private UserWindowView _userWindowView;
         [SerializeField] private TextMeshProUGUI _investedCount;
