@@ -1,5 +1,7 @@
 import requests
-from utils import get_distance_km
+from geopy.distance import geodesic
+from typing import Tuple
+
 
 def find_closest_facility(api_key, longitude, latitude, facility):
     url = 'https://search-maps.yandex.ru/v1/'
@@ -31,3 +33,21 @@ def find_closest_facility(api_key, longitude, latitude, facility):
     else:
         print(f"Error: {response.status_code}")
         return None
+    
+def get_air_polution(api_key, longitude, latitude):
+    url = f'http://api.openweathermap.org/data/2.5/air_pollution?lat={latitude}&lon={longitude}&appid={api_key}'
+    response = requests.get(url)
+
+    if response.status_code == 200:
+        data = response.json()
+        pollution_metrics = data['list'][0]['components']
+        return pollution_metrics
+    else:
+        print(f"Error: {response.status_code}")
+        return None
+
+def get_distance_km(coord1: Tuple[float, float], coord2: Tuple[float, float]) -> float:
+    distance_km = geodesic(coord1, coord2).kilometers
+    return distance_km
+
+
