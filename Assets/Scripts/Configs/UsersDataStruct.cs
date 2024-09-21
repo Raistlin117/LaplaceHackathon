@@ -8,5 +8,6 @@ namespace Configs
         public int Id;
         public string Name;
         public int Age;
+        public int PreferredPrice;
     }
 }

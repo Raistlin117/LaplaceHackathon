@@ -1,4 +1,4 @@
-using System;
+using AppSaveAndLoad;
 using Configs;
 using UnityEngine;
 using VContainer;
@@ -8,11 +8,12 @@ namespace Common
 {
     public class AppLifetimeScope : LifetimeScope
     {
-        [SerializeField] private UserData _userData;
+        [SerializeField] private UserDataConfigs _userDataConfigs;
 
         protected override void Configure(IContainerBuilder builder)
         {
-            builder.RegisterInstance(_userData);
+            builder.RegisterInstance(_userDataConfigs);
+            builder.Register<SaveAndLoad>(Lifetime.Singleton);
 
             // builder.RegisterInstance(...); - конфиги (SerializeField)
             // builder.RegisterComponent(...); - компоненты (SerializeField)

@@ -10,4 +10,8 @@ namespace AppSignals
     public class OptionSelectedSignal : ASignal<OptionType>
     {
     }
+
+    public class UserDataUpdatedSignal : ASignal
+    {
+    }
 }

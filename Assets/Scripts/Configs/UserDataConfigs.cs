@@ -5,7 +5,7 @@ using UnityEngine;
 namespace Configs
 {
     [CreateAssetMenu(fileName = "UserData", menuName = "Configs/UserData", order = 0)]
-    public class UserData : ScriptableObject
+    public class UserDataConfigs : ScriptableObject
     {
         [SerializeField] private List<UsersDataStruct> _usersList;
 

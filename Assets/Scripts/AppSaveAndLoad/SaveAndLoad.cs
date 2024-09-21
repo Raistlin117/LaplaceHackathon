@@ -2,11 +2,12 @@ using System.IO;
 using AppSignals;
 using Common;
 using Common.Data;
+using Configs;
 using deVoid.Utils;
 using Newtonsoft.Json;
 using UnityEngine;
 
-namespace SaveAndLoad
+namespace AppSaveAndLoad
 {
     public class SaveAndLoad
     {
@@ -35,6 +36,37 @@ namespace SaveAndLoad
             AppData appData = JsonConvert.DeserializeObject<AppData>(json);
 
             return appData;
+        }
+
+        public void SaveUserData(UsersDataStruct usersDataStruct)
+        {
+            string json = JsonConvert.SerializeObject(usersDataStruct, Formatting.Indented);
+
+            SaveJsonToFile(json, Constants.UserDataFileName);
+
+            Signals.Get<UserDataUpdatedSignal>().Dispatch();
+        }
+
+        public UsersDataStruct LoadUserData()
+        {
+            string json = ReadJsonFromFile(Constants.UserDataFileName);
+
+            if (string.IsNullOrEmpty(json))
+            {
+                UsersDataStruct newUserData = new UsersDataStruct();
+
+                newUserData.Name = "User";
+                newUserData.Id = 0;
+                newUserData.Age = 24;
+
+                SaveUserData(newUserData);
+
+                json = ReadJsonFromFile(Constants.AppDataFileName);
+            }
+
+            UsersDataStruct userData = JsonConvert.DeserializeObject<UsersDataStruct>(json);
+
+            return userData;
         }
 
 
