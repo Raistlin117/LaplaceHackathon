@@ -9,10 +9,12 @@ namespace Common
     public class AppLifetimeScope : LifetimeScope
     {
         [SerializeField] private UserDataConfigs _userDataConfigs;
+        [SerializeField] private PhotoConfigs _photoConfigs;
 
         protected override void Configure(IContainerBuilder builder)
         {
             builder.RegisterInstance(_userDataConfigs);
+            builder.RegisterInstance(_photoConfigs);
             builder.Register<SaveAndLoad>(Lifetime.Singleton);
 
             // builder.RegisterInstance(...); - конфиги (SerializeField)
