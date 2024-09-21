@@ -1,0 +1,16 @@
+{
+    "data": [
+        {
+            "id": 1,
+            "name": "Oila Residence",
+            "latitude": 41.346924,
+            "longitude": 69.160575
+        },
+        {
+            "id": 2,
+            "name": "Savr Avenue",
+            "latitude": 41.274196,
+            "longitude": 69.286999
+        }
+    ]
+}
