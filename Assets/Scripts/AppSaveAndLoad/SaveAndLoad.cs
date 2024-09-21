@@ -112,5 +112,10 @@ namespace AppSaveAndLoad
             Debug.LogError("Файл не найден: " + path);
             return null;
         }
+
+        // public object LoadHouseData()
+        // {
+        //
+        // }
     }
 }
