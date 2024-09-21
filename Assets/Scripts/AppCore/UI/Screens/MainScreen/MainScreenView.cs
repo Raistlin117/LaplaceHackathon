@@ -4,7 +4,7 @@ using VContainer;
 
 namespace UI.Screens.MainScreen
 {
-    public class MainScreen : MonoBehaviour
+    public class MainScreenView : MonoBehaviour
     {
         private SaveAndLoad _saveAndLoad;
 

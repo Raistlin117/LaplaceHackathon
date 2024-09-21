@@ -1,3 +1,4 @@
+using AppCore.UI.Screens;
 using deVoid.Utils;
 
 namespace AppSignals
@@ -12,6 +13,10 @@ namespace AppSignals
     }
 
     public class UserDataUpdatedSignal : ASignal
+    {
+    }
+
+    public class OpenScreenSignal : ASignal<ScreenType, int>
     {
     }
 }

@@ -963,11 +963,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 3102fe71924246e4b07fa22804a2dc6a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  _houseImage: {fileID: 0}
-  _developerText: {fileID: 0}
-  _houseInfo: {fileID: 0}
-  _investedAmountText: {fileID: 0}
-  _slider: {fileID: 0}
+  _houseImage: {fileID: 536768534358484417}
+  _developerText: {fileID: 2329771755196282015}
+  _roomInfo: {fileID: 876740419040631516}
+  _floorInfo: {fileID: 7005091948120413105}
+  _investedLeftAmountText: {fileID: 6046608277160051470}
+  _slider: {fileID: 7523253130306190257}
 --- !u!1 &9029407696710172522
 GameObject:
   m_ObjectHideFlags: 0
@@ -1131,6 +1132,34 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 8774024365070298774, guid: efc82ad751911db46ac4ac51f43a0adf, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.size
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8774024365070298774, guid: efc82ad751911db46ac4ac51f43a0adf, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Mode
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 8774024365070298774, guid: efc82ad751911db46ac4ac51f43a0adf, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Target
+      value: 
+      objectReference: {fileID: 8041398891331077303}
+    - target: {fileID: 8774024365070298774, guid: efc82ad751911db46ac4ac51f43a0adf, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_CallState
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 8774024365070298774, guid: efc82ad751911db46ac4ac51f43a0adf, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: OnClick
+      objectReference: {fileID: 0}
+    - target: {fileID: 8774024365070298774, guid: efc82ad751911db46ac4ac51f43a0adf, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: AppCore.UI.Screens.MainScreen.HouseWindow, Assembly-CSharp
+      objectReference: {fileID: 0}
+    - target: {fileID: 8774024365070298774, guid: efc82ad751911db46ac4ac51f43a0adf, type: 3}
+      propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_Arguments.m_ObjectArgumentAssemblyTypeName
+      value: UnityEngine.Object, UnityEngine
+      objectReference: {fileID: 0}
     - target: {fileID: 8783123888857974248, guid: efc82ad751911db46ac4ac51f43a0adf, type: 3}
       propertyPath: m_Name
       value: InvestButton
@@ -1255,3 +1284,14 @@ RectTransform:
   m_CorrespondingSourceObject: {fileID: 7107722534433415764, guid: 0abf4d1a3ebab5749914a3f8a6fb88da, type: 3}
   m_PrefabInstance: {fileID: 3550521483907790784}
   m_PrefabAsset: {fileID: 0}
+--- !u!114 &7523253130306190257 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6422707730230381681, guid: 0abf4d1a3ebab5749914a3f8a6fb88da, type: 3}
+  m_PrefabInstance: {fileID: 3550521483907790784}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 67db9e8f0e2ae9c40bc1e2b64352a6b4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
