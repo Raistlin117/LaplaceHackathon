@@ -642,6 +642,7 @@ GameObject:
   - component: {fileID: 148290111413125713}
   - component: {fileID: 8636240136019157716}
   - component: {fileID: 7076524707363858861}
+  - component: {fileID: 7369356543601817135}
   m_Layer: 5
   m_Name: InvestmentItem
   m_TagString: Untagged
@@ -670,7 +671,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: 7.3925, y: 196.22069}
+  m_AnchoredPosition: {x: 7.3924866, y: 196.2207}
   m_SizeDelta: {x: 900.58, y: 252.5324}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &148290111413125713
@@ -755,3 +756,18 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls: []
+--- !u!114 &7369356543601817135
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7661909867346768690}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 57e247eda3be4d72a80a1fd5705524cb, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _image: {fileID: 7186940364744868713}
+  _developerName: {fileID: 893450148274965768}
+  _moneyCount: {fileID: 8718508684488030640}
