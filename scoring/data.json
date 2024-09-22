@@ -1,0 +1,64 @@
+{
+    "data": [
+        {
+            "id": 1,
+            "name": "Oila Residence",
+            "latitude": 41.346924,
+            "longitude": 69.160575
+        },
+        {
+            "id": 2,
+            "name": "Savr Avenue",
+            "latitude": 41.274196,
+            "longitude": 69.286999
+        },
+        {
+            "id": 3,
+            "name": "Istanbul City",
+            "latitude": 41.275583,
+            "longitude": 69.265604
+        },
+        {
+            "id": 4,
+            "name": "Choshtepa Residence",
+            "latitude": 41.237251,
+            "longitude": 69.195204
+        },
+        {
+            "id": 5,
+            "name": "Chimgan Hills",
+            "latitude": 41.352563,
+            "longitude": 69.350596
+        },
+        {
+            "id": 6,
+            "name": "Binkat",
+            "latitude": 41.266718,
+            "longitude": 69.235039
+        },
+        {
+            "id": 7,
+            "name": "Sun",
+            "latitude": 41.282357,
+            "longitude": 69.297391
+        },
+        {
+            "id": 8,
+            "name": "Newport",
+            "latitude": 41.272107,
+            "longitude": 69.266846
+        },
+        {
+            "id": 9,
+            "name": "Botanika saroyi",
+            "latitude": 41.349502,
+            "longitude": 69.330270
+        },
+        {
+            "id": 10,
+            "name": "Izmir",
+            "latitude": 41.276218,
+            "longitude": 69.33811
+        }
+    ]
+}
