@@ -25,6 +25,11 @@ Open the project in Unity Editor -> Press the Play button at the top of the scre
 - **Scoring System:** Python
 - **Design and Prototyping:** Figma
 
-Thorough system overview resides in `documentation` folder.
+---
+
+<img src="documentation/image.png" alt="Application screens" width="800"/>
+
+
+A more detailed system overview resides in `documentation` folder.
 
 
