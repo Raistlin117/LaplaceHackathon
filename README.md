@@ -7,7 +7,7 @@ Real-Invest – a platform that allows investors to pool resources and co-invest
 
 **Option 1.** Install the APK
 
-The easiest way is to install the .apk provided in the repository
+The easiest way is to install the .apk provided in the repository or [Google Drive](https://drive.google.com/drive/folders/1vGHMHDMNaWhT24VYwXo7O-MrrI0Ydukm?usp=sharing)
 
 **Option 2.** The application interface is also accessible through Unity Play mode
 
