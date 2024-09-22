@@ -1,6 +1,5 @@
-using System.Globalization;
+using Common.Data;
 using TMPro;
-using UI.Screens.MainScreen;
 using UnityEngine;
 
 namespace AppCore.UI.Screens.LotScreen
@@ -14,14 +13,15 @@ namespace AppCore.UI.Screens.LotScreen
         [SerializeField] private TextMeshProUGUI _floor;
         [SerializeField] private TextMeshProUGUI _cellingHight;
 
-        public void Setup(HouseData houseWindowData)
+        public void Setup(Projects houseWindowData, int id)
         {
-            _developerName.text = houseWindowData.DeveloperText;
-            _buildingType.text = houseWindowData.BuildingType;
-            _rooms.text = houseWindowData.RoomsCount.ToString();
-            _area.text = houseWindowData.Area.ToString();
-            _floor.text = houseWindowData.Floor.ToString();
-            _cellingHight.text = houseWindowData.CellingHight.ToString("F1");
+            var features = houseWindowData.HouseDataWrapper[id].Features;
+            _developerName.text = features.Title;
+            _buildingType.text = $"Building Type: {features.BuildingType}";
+            _rooms.text = $"Room(s): {features.Rooms}";
+            _area.text = $"Area: {features.Area} sq. m";
+            _floor.text = $"{features.Floor} floor of {features.MaxFloor}";
+            _cellingHight.text = $"Ceiling Height: {features.CeilingHeight:F1} m";
         }
     }
 }

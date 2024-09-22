@@ -42,7 +42,7 @@ namespace AppCore.UI.Screens
                     _mainScreenView.gameObject.SetActive(false);
                     _profileScreenView.gameObject.SetActive(false);
                     _lotScreen.gameObject.SetActive(true);
-                    _lotScreen.SetId(id);
+                    _lotScreen.Setup(id);
                     break;
                 default:
                     throw new ArgumentOutOfRangeException(nameof(screenType), screenType, null);

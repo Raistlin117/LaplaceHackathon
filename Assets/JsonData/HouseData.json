@@ -1,0 +1,302 @@
+{
+  "Projects": [
+    {
+      "Id": 1,
+      "Score": 8.5,
+      "Features": {
+        "Title": "Oila Residence",
+        "Description": "Residential complex Oila Residence of comfort class, built using monolithic construction technology, located in the Sergeli district, Khanabadtepa, Khanabad, Tashkent, 100160, Uzbekistan.",
+        "BuildingType": "Comfort+",
+        "Photos": [1, 2, 3],
+        "Area": 30,
+        "Rooms": 1,
+        "Floor": 5,
+        "MaxFloor": 15,
+        "CeilingHeight": 3.5,
+        "Price": 30000,
+        "Invested": 20000
+      },
+      "Investors": [
+        {
+          "Name": "investor1",
+          "Amount": 10000
+        },
+        {
+          "Name": "investor2",
+          "Amount": 10000
+        },
+        {
+          "Name": "investor2",
+          "Amount": 10000
+        }
+      ]
+    },
+    {
+      "Id": 2,
+      "Score": 8.3,
+      "Features": {
+        "Title": "Savr Avenue",
+        "Description": "Residential complex Oila Residence of comfort class, built using block construction technology, located in the Sergeli district, Khanabadtepa, Khanabad, Tashkent, 100160, Uzbekistan.",
+        "BuildingType": "Comfort",
+        "Photos": [4, 5, 6],
+        "Area": 40,
+        "Rooms": 1,
+        "Floor": 6,
+        "MaxFloor": 12,
+        "CeilingHeight": 3,
+        "Price": 25000,
+        "Invested": 10000
+      },
+      "Investors": [
+        {
+          "Name": "investor1",
+          "Amount": 100000
+        },
+        {
+          "Name": "investor2",
+          "Amount": 10000
+        },
+        {
+          "Name": "investor2",
+          "Amount": 10000
+        }
+      ]
+    },
+    {
+      "Id": 3,
+      "Score": 8.2,
+      "Features": {
+        "Title": "Istanbul City",
+        "Description": "The residential complex Istanbul City is the perfect solution for those who want to purchase an apartment with cozy, ready-made renovations in the city center.",
+        "BuildingType": "Business",
+        "Photos": [7, 8, 9],
+        "Area": 34,
+        "Rooms": 1,
+        "Floor": 2,
+        "MaxFloor": 10,
+        "CeilingHeight": 3,
+        "Price": 40000,
+        "Invested": 25000
+      },
+      "Investors": [
+        {
+          "Name": "investor1",
+          "Amount": 12000
+        },
+        {
+          "Name": "investor2",
+          "Amount": 13000
+        },
+        {
+          "Name": "investor2",
+          "Amount": 10000
+        }
+      ]
+    },
+    {
+      "Id": 4,
+      "Score": 7.5,
+      "Features": {
+        "Title": "Choshtepa Residence",
+        "Description": "Residential complex Choshtepa Residence of comfort class, built using brick construction technology, located in the Yangikhayat district, Choshtepa",
+        "BuildingType": "Comfort",
+        "Photos": [10, 11, 12],
+        "Area": 37,
+        "Rooms": 1,
+        "Floor": 8,
+        "MaxFloor": 16,
+        "CeilingHeight": 3.1,
+        "Price": 36000,
+        "Invested": 27000
+      },
+      "Investors": [
+        {
+          "Name": "investor1",
+          "Amount": 17000
+        },
+        {
+          "Name": "investor2",
+          "Amount": 10000
+        },
+        {
+          "Name": "investor2",
+          "Amount": 10000
+        }
+      ]
+    },
+    {
+      "Id": 5,
+      "Score": 7.5,
+      "Features": {
+        "Title": "Chimgan Hills",
+        "Description": "Chimgan Hills is a new residential complex built for those who values high life qualit and wants to live in modern and stylish house.",
+        "BuildingType": "Comfort",
+        "Photos": [13, 14, 15],
+        "Area": 35.8,
+        "Rooms": 1,
+        "Floor": 3,
+        "MaxFloor": 9,
+        "CeilingHeight": 3.2,
+        "Price": 41000,
+        "Invested": 35000
+      },
+      "Investors": [
+        {
+          "Name": "investor1",
+          "Amount": 13000
+        },
+        {
+          "Name": "investor2",
+          "Amount": 10000
+        },
+        {
+          "Name": "investor3",
+          "Amount": 12000
+        }
+      ]
+    },
+    {
+      "Id": 6,
+      "Score": 7.3,
+      "Features": {
+        "Title": "Binkat",
+        "Description": "Binkat is a new residential complex designed for comfortable and modern lifestyle. The new comfort-class complex has eight 14-story buildings.",
+        "BuildingType": "Comfort",
+        "Photos": [16, 17, 18],
+        "Area": 44.5,
+        "Rooms": 1,
+        "Floor": 5,
+        "MaxFloor": 14,
+        "CeilingHeight": 3.2,
+        "Price": 41000,
+        "Invested": 29000
+      },
+      "Investors": [
+        {
+          "Name": "investor1",
+          "Amount": 14000
+        },
+        {
+          "Name": "investor2",
+          "Amount": 15000
+        },
+        {
+          "Name": "investor2",
+          "Amount": 10000
+        }
+      ]
+    },
+    {
+      "Id": 7,
+      "Score": 7,
+      "Features": {
+        "Title": "Sun",
+        "Description": "Residential complex SUN is a space where every meter speaks of a high standard of living. Our club-style complex combines comfort, style and convenience.",
+        "BuildingType": "Comfort",
+        "Photos": [19, 20, 21],
+        "Area": 34.67,
+        "Rooms": 1,
+        "Floor": 7,
+        "MaxFloor": 14,
+        "CeilingHeight": 3,
+        "Price": 50000,
+        "Invested": 30000
+      },
+      "Investors": [
+        {
+          "Name": "investor1",
+          "Amount": 20000
+        },
+        {
+          "Name": "investor2",
+          "Amount": 10000
+        }
+      ]
+    },
+    {
+      "Id": 8,
+      "Score": 7,
+      "Features": {
+        "Title": "Newport",
+        "Description": "The Newport residential complex consists of 15 buildings of 19-story premium-class residential brick houses. The architecture of the complex is made in the Art Nouveau style.",
+        "BuildingType": "Premium",
+        "Photos": [22, 23, 24],
+        "Area": 44.85,
+        "Rooms": 1,
+        "Floor": 11,
+        "MaxFloor": 19,
+        "CeilingHeight": 3.4,
+        "Price": 50000,
+        "Invested": 37000
+      },
+      "Investors": [
+        {
+          "Name": "investor1",
+          "Amount": 11000
+        },
+        {
+          "Name": "investor2",
+          "Amount": 14000
+        },
+        {
+          "Name": "investor3",
+          "Amount": 12000
+        }
+      ]
+    },
+    {
+      "Id": 9,
+      "Score": 6.9,
+      "Features": {
+        "Title": "Botanika saroyi",
+        "Description": "Botanika Saroyi is a unique Business class residential complex, hidden in the green heart of Tashkent right next to the Botanical Garden. Modern oriental style, embodied in the architectural and design solution.",
+        "BuildingType": "Business",
+        "Photos": [25, 26, 27],
+        "Area": 37.26,
+        "Rooms": 1,
+        "Floor": 3,
+        "MaxFloor": 16,
+        "CeilingHeight": 3,
+        "Price": 50000,
+        "Invested": 33000
+      },
+      "Investors": [
+        {
+          "Name": "investor1",
+          "Amount": 15000
+        },
+        {
+          "Name": "investor2",
+          "Amount": 18000
+        }
+      ]
+    },
+    {
+      "Id": 10,
+      "Score": 6.5,
+      "Features": {
+        "Title": "Izmir",
+        "Description": "The comfort-class complex consists of five 12-storey buildings located in the Yashnabad district. The complex occupies an area of ​​3,000 square meters and is equipped with everything necessary for a modern lifestyle.",
+        "BuildingType": "Comfort",
+        "Photos": [28, 29, 30],
+        "Area": 40.4,
+        "Rooms": 1,
+        "Floor": 6,
+        "MaxFloor": 12,
+        "CeilingHeight": 3,
+        "Price": 25000,
+        "Invested": 15000
+      },
+      "Investors": [
+        {
+          "Name": "investor1",
+          "Amount": 10000
+        },
+        {
+          "Name": "investor2",
+          "Amount": 5000
+        }
+      ]
+    }
+  ]
+}

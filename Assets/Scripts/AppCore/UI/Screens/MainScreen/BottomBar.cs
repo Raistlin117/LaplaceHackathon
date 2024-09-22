@@ -14,6 +14,7 @@ namespace AppCore.UI.Screens.MainScreen
         [SerializeField] private Image _investIcon;
         [SerializeField] private GameObject _mainScreen;
         [SerializeField] private GameObject _profileScreen;
+        [SerializeField] private GameObject _lotScreen;
 
         public void OnInvestClick()
         {
@@ -23,6 +24,7 @@ namespace AppCore.UI.Screens.MainScreen
             _investIcon.color = _selectedColor;
             _mainScreen.SetActive(true);
             _profileScreen.SetActive(false);
+            _lotScreen.SetActive(false);
         }
 
         public void OnProfileClick()
@@ -33,6 +35,7 @@ namespace AppCore.UI.Screens.MainScreen
             _investIcon.color = _unselectedColor;
             _mainScreen.SetActive(false);
             _profileScreen.SetActive(true);
+            _lotScreen.SetActive(false);
         }
     }
 }

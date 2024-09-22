@@ -5,40 +5,12 @@ using Common.Data;
 using Configs;
 using deVoid.Utils;
 using Newtonsoft.Json;
-using UI.Screens.MainScreen;
 using UnityEngine;
 
 namespace AppSaveAndLoad
 {
     public class SaveAndLoad
     {
-        public void SaveAppData(AppData appData)
-        {
-            string json = JsonConvert.SerializeObject(appData, Formatting.Indented);
-
-            SaveJsonToFile(json, Constants.AppDataFileName);
-
-            Signals.Get<AppDataUpdatedSignal>().Dispatch();
-        }
-
-        public AppData LoadAppData()
-        {
-            string json = ReadJsonFromFile(Constants.AppDataFileName);
-
-            if (string.IsNullOrEmpty(json))
-            {
-                AppData newAppData = new AppData();
-
-                SaveAppData(newAppData);
-
-                json = ReadJsonFromFile(Constants.AppDataFileName);
-            }
-
-            AppData appData = JsonConvert.DeserializeObject<AppData>(json);
-
-            return appData;
-        }
-
         public void SaveUserData(UsersDataStruct usersDataStruct)
         {
             string json = JsonConvert.SerializeObject(usersDataStruct, Formatting.Indented);
@@ -48,13 +20,13 @@ namespace AppSaveAndLoad
             Signals.Get<UserDataUpdatedSignal>().Dispatch();
         }
 
-        public HouseData LoadHouseData()
+        public Projects LoadHouseData()
         {
-            string json = ReadJsonFromFile(Constants.AppDataFileName);
+            string json = ReadJsonFromFile(Constants.HouseDataFileName);
 
-            HouseData appData = JsonConvert.DeserializeObject<HouseData>(json);
+            Projects projects = JsonConvert.DeserializeObject<Projects>(json);
 
-            return appData;
+            return projects;
         }
 
         public UsersDataStruct LoadUserData()

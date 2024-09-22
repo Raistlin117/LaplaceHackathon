@@ -1,4 +1,5 @@
-using UI.Screens.MainScreen;
+using Common.Data;
+using TMPro;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -8,21 +9,19 @@ namespace AppCore.UI.Screens.LotScreen
     {
         [SerializeField] private InvestorItem[] _investorItem;
         [SerializeField] private Slider _slider;
+        [SerializeField] private TextMeshProUGUI _potencial;
 
-        public void Setup(Investors[] investorsData, HouseData houseData)
+        public void Setup(Projects houseData, int id)
         {
             for (var i = 0; i < _investorItem.Length; i++)
             {
-                if (investorsData.Length == i)
-                {
-                    _investorItem[i].gameObject.SetActive(false);
-                    continue;
-                }
-                _investorItem[i].gameObject.SetActive(true);
-                _investorItem[i].Setup(investorsData[i].amount);
+                _investorItem[i].Setup(houseData.HouseDataWrapper[id].Investors[i].Amount);
             }
 
-            _slider.value = (float) houseData.InvestedLeftAmount / houseData.HouseOverallPrice;
+            var features = houseData.HouseDataWrapper[id].Features;
+            _slider.value = (float) features.Invested / features.Price;
+
+            _potencial.text = $"up to ${features.Price - features.Invested}";
         }
     }
 }

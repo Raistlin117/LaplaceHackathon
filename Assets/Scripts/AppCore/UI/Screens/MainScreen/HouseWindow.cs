@@ -1,7 +1,8 @@
 using AppSignals;
+using Common.Data;
+using Configs;
 using deVoid.Utils;
 using TMPro;
-using UI.Screens.MainScreen;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -14,19 +15,25 @@ namespace AppCore.UI.Screens.MainScreen
         [SerializeField] private TextMeshProUGUI _roomInfo;
         [SerializeField] private TextMeshProUGUI _floorInfo;
         [SerializeField] private TextMeshProUGUI _investedLeftAmountText;
+        [SerializeField] private TextMeshProUGUI _investedPercent;
+        [SerializeField] private TextMeshProUGUI _score;
         [SerializeField] private Slider _slider;
 
         private int _id;
 
-        public void Setup(HouseData houseWindowData)
+        public void Setup(Projects houseData, PhotoConfigs photoConfigs, int id)
         {
-            _id = houseWindowData.Id;
-            _houseImage.sprite = houseWindowData.HouseImage;
-            _developerText.text = houseWindowData.DeveloperText;
-            _roomInfo.text = $"{houseWindowData.RoomsCount} rooms";
-            _floorInfo.text = $"{houseWindowData.Floor} floor of {houseWindowData.HouseFloorness}";
-            _investedLeftAmountText.text = houseWindowData.InvestedLeftAmount.ToString();
-            _slider.value = (float) houseWindowData.InvestedLeftAmount / houseWindowData.HouseOverallPrice;
+            _id = houseData.HouseDataWrapper[id].Id;
+            var features = houseData.HouseDataWrapper[id].Features;
+            _houseImage.sprite = photoConfigs.PhotoList[id];
+            _developerText.text = features.Title;
+            _roomInfo.text = $"{features.Rooms} rooms";
+            _floorInfo.text = $"{features.Floor} floor of {features.MaxFloor}";
+            _investedLeftAmountText.text = $"~${(features.Price - features.Invested)}";
+            _slider.value = (float) features.Invested / features.Price;
+            var percent = (float)features.Invested / features.Price;
+            _investedPercent.text = $"{(int)(percent * 100)}%";
+            _score.text = houseData.HouseDataWrapper[id].Score.ToString("F1");
         }
 
         public void OnClick()

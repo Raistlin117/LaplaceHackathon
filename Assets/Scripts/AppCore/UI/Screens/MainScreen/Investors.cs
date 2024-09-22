@@ -1,8 +1,11 @@
+using System;
+
 namespace UI.Screens.MainScreen
 {
+    [Serializable]
     public class Investors
     {
-        public string name;
-        public int amount;
+        public string Name { get; set; }
+        public int Amount { get; set; }
     }
 }
