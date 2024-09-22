@@ -12,9 +12,9 @@ with open('data.json', 'r') as file:
 properties = json_data['data']
 
 # Yandex Maps API KEY
-yandex_api_key = '0f8bd640-4edb-40a0-a86c-9c2713622e13'
+yandex_api_key = ''
 # Open Weather API KEY
-oweather_api_key = '35f7f231c2e8e7942cef3aa53104a063'
+oweather_api_key = ''
 
 
 # Collect Data
